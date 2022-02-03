@@ -1,0 +1,21 @@
+<!-- header section starts  -->
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<header>
+
+  <a href="#" class="logo"><span>Sharjeel</span> & Co.</a>
+
+  <input type="checkbox" id="menu-bar">
+  <label for="menu-bar" class="fas fa-bars"></label>
+
+  <nav class="navbar">
+      <a [routerLink]="'/Home'">Home</a>
+      <a (click)="navigatePages('Customer')">Customers</a>
+      <a (click)="navigatePages('Product')">Products</a>
+  </nav>
+</header>
+
+<router-outlet></router-outlet>
