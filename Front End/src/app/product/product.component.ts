@@ -11,7 +11,7 @@ export class ProductComponent implements OnInit {
   Products : any;
 
   constructor(private http: HttpClient) {
-    this.http.get('https://localhost:44317/api/Products').subscribe(data => {
+    this.http.get('https://localhost:44376/api/Products').subscribe(data => {
       this.Products = data
       console.log(data);
     })

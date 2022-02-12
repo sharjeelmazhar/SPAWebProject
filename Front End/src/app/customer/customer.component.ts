@@ -10,7 +10,7 @@ export class CustomerComponent implements OnInit {
 
   Customers : any;
   constructor(private http: HttpClient) {
-    this.http.get('https://localhost:44317/api/Customers').subscribe(data => {
+    this.http.get('https://localhost:44376/api/Customers').subscribe(data => {
       this.Customers = data
       console.log(data);
     })
